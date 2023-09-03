@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Computer Force</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="./images/computerforce-logo.png" alt="Computer Force logo"></a>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </nav>
+  
+  <main>
+    <!-- Payment form goes here -->
+    <h1>Checkout</h1>
+    <form action="process_payment.php" method="post">
+      <!-- Payment form fields -->
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+      <br>
+      <label for="expiration-date">Expiration Date:</label>
+      <input type="text" id="expiration-date" name="expiration-date" required>
+      <br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+      <br>
+      <label for="name-on-card">Name on Card:</label>
+      <input type="text" id="name-on-card" name="name-on-card" required>
+      <br>
+      <!-- Add more payment fields as needed -->
+      
+      <!-- Submit button to process payment -->
+      <button type="submit">Submit Payment</button>
+    </form>
+  </main>
+  
+  
+<aside>
+  <h2>Purchases</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>Item</th>
+        <th>Price(AUD)</th>
+      </tr>
+      <tr>
+        <td>Test Item 1</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <td>Test Item 2</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>$1500</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="checkout.html" class="checkout-btn">Go to Checkout</a>
+</aside>
+  
+  <footer>
+    <p>&copy;2023 Computer Force. All rights reserved. Octavio Sartoris Llanes</p>
+  </footer>
+</body>
+</html>
